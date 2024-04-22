@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Card, CardHeader } from './ui/Card';
-import { Badge } from './ui/Badge';
+import { Card, CardHeader } from './ui/card';
+import { Badge } from './ui/badge';
 
 const ActivityCard = ({ activity }) => {
   return (

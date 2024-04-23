@@ -11,9 +11,9 @@ import React, { useEffect, useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 
-const Model = (props) => {
+const TreeModel = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/scene.gltf');
+  const { nodes, materials, animations } = useGLTF('./models/tree/scene.gltf');
   const { actions, names } = useAnimations(animations, group);
   const { viewport } = useThree();
 
@@ -263,6 +263,6 @@ const Model = (props) => {
   );
 };
 
-export default Model;
+export default TreeModel;
 
-useGLTF.preload('/scene.gltf');
+useGLTF.preload('./models/tree/scene.gltf');

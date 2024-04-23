@@ -1,7 +1,9 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+import Socials from './Socials';
 
-const Scene = dynamic(() => import('@/components/Scene'), {
+const TreeScene = dynamic(() => import('@/components/TreeScene'), {
   ssr: false,
 });
 
@@ -14,17 +16,30 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Developer
             </div>
-            <h1 className="h1 mb-4">Karn Singh</h1>
+            <h1 className="h1 mb-6 mt-6">
+              <Typewriter
+                options={{
+                  strings: ['Karn', 'Singh'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               I am a full-stack developer with a passion for creating beautiful
               and functional websites and applications. I study applied
               informatics at Hogeschool PXL.
             </p>
+            <Socials
+              className="right-0"
+              containerStyles="flex gap-x-4 mx-auto xl:mx-0"
+              iconStyles="text-foreground text-[22px] hover:text-primary transition-all"
+            />
           </div>
         </div>
       </div>
       <div className="absolute -z-40 inset-0 hidden xl:block">
-        <Scene />
+        <TreeScene />
       </div>
       <div className="xl:hidden m-10 max-w-[60%] flex justify-center items-center mx-auto">
         <Image

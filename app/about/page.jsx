@@ -34,25 +34,35 @@ const About = () => {
               className="absolute -z-30 top-[5%] right-[6%] transform rotate-12 hover:animate-ping"
             />
             <p className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Jaskarnpreet Singh - 23
+              ---------
             </p>
             <p className="mb-12">
-              My life mainly revolves around several passions: fitness,
-              motorcycles and gaming. Although I do not have an extensive list
-              of hobbies, these activities are still essential for my
-              entertainment and wellbeing.
+              Hey there! My name is Jaskarnpreet Singh, but feel free to call me <b>Karn</b>. 
+              I am a 23-year-old student who, as you can tell from my name, was born in bustling India. 
+              This is where I spent my earliest years until my family decided to make the big jump to Belgium,
+              where I grew up to become the person I am today.
               <br />
               <br />
-              By spending my time in virtual worlds, I also began to understand
-              more and more about the technology behind these games and this led
-              to my interest in application development. As a student at
-              <b> Hogeschool PXL </b>, where I study Applied Informatics, I was
-              able to turn my passion for these technologies into academic
-              knowledge and express it in practical projects.
+              My passion for technology and computers started at a young age,
+              which eventually led me to the <b>Applied Informatics</b> course at Hogeschool PXL. 
+              There, I found my love for Full stack Development and I was able to turn my passion for 
+              these technologies into academic knowledge and express it in practical projects 
+              <br />
+              <br />
+              Besides my academic pursuits, I have a number of diverse interests that keep my life in balance. 
+              In my spare time, you can often find me at my computer, where I dive into the world of <b>gaming</b>. 
+              This offers me both relaxation and a challenge. Of course, 
+              I don't spend all my free time in the virtual world, I also value my physical health. 
+              As a result, I regularly spend time at the <b>gym</b>. Moreover, I also own a <b>motorcycle</b>, a Yamaha MT-07,
+              which I like to ride around on when the sun is out (it doesn’t happen a lot). But above all, 
+              I appreciate the time I spend with my <b className="text-primary">girlfriend</b>, who adds a lot of colour 
+              (literally) to my life and motivates me to do better every time.
+              <br />
+              <br />
+              This is Karn's world in a nutshell. Also, 
+              if you made it past this point and you didn’t lose interest in who I am, 
+              check what my skills are below!
             </p>
-            <div className="absolute z-30 w-[30%] h-[50%] -bottom-32 right-[5%] hidden lg:block">
-              <BirdScene />
-            </div>
             <Image
               src="/leaf.png"
               alt=""
